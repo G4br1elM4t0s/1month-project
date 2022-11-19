@@ -92,10 +92,6 @@ import lupa from "./img/lupa.svg";
 import bolsa from "./img/icon/bag.svg";
 import perfil from "./img/icon/profile.svg";
 import curtida from "./img/icon/wishlist.svg";
-
-
-// <input placeholder="Search for products or brands....." type="text" />
-
 import logo from "./img/logo.svg";
 
 export function HeaderWeb() {
