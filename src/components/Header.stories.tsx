@@ -13,7 +13,5 @@ export default{
 }as Meta<HeaderProps>
 
 export const Header: StoryObj<HeaderProps> = {
-  args:{
-    children:'<Image source="./logo.svg"></Image>'
-  }
+  args:{ }
 }
