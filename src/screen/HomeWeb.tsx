@@ -123,16 +123,96 @@ const ColectionsCard = styled.div`
   flex-direction: column;
   align-items: end;
   justify-content: flex-end;
+  margin-bottom: 40px;
 
-  h3{
+  h3 {
     margin: 0 0 16px 16px;
   }
 `;
+
+const Shots = styled.div`
+  margin-top: 60px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  div {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    h2 {
+
+      margin: 0 0 24px 65px;
+    }
+  }
+`;
+
+const ShotBox = styled.div`
+  display: flex;
+  width: 96%;
+  justify-content: center;
+
+  div {
+    width: 168px;
+    height: 168px;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+  }
+`;
+
+const Especial = styled.div`
+  width: 160px;
+  height: 160px;
+  background: #f4f4f4;
+  margin-right: 46px;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+`;
+
+const Banner2 = styled.div`
+  height:400px;
+  width:98%;
+  background: gray;
+  margin: 0 auto;
+  margin-bottom:40px;
+  margin-top:68px;
+`
+
+const BannerBox = styled.div`
+  margin: 0 auto;
+  width: 98%;
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:73px;
+  
+`
+
+const Banner3 = styled.div`
+  height: 228px;
+  width: 604px;
+  background: gray;
+  border-radius: 16px;
+`
+
+const Banner4 = styled.div`
+    height: 228px;
+  width: 604px;
+  background: gray;
+  border-radius: 16px;
+
+`
 
 import card from "./card.png";
 import like from "../components/img/coracao.png";
 import seta from "../components/img/chevron-right-small.png";
 import perfume from "./perfume.png";
+import zara from "./logos/zara_logo.png";
+import { FooterWeb } from "../components/Footer.Web";
 
 export function HomeWeb() {
   return (
@@ -216,19 +296,61 @@ export function HomeWeb() {
         </div>
         <CollectionsCardBox>
           <ColectionsCard>
-            <div><h3>Personal Care</h3></div>
+            <div>
+              <h3>Personal Care</h3>
+            </div>
           </ColectionsCard>
           <ColectionsCard>
-            <div><h3>Personal Care</h3></div>
+            <div>
+              <h3>Personal Care</h3>
+            </div>
           </ColectionsCard>
           <ColectionsCard>
-            <div><h3>Personal Care</h3></div>
+            <div>
+              <h3>Personal Care</h3>
+            </div>
           </ColectionsCard>
           <ColectionsCard>
-            <div><h3>Personal Care</h3></div>
+            <h3>Personal Care</h3>
           </ColectionsCard>
         </CollectionsCardBox>
       </Collections>
+
+      <Shots>
+        <div>
+          <h2>Shop by Brands</h2>
+        </div>
+        <ShotBox>
+          <Especial>
+            <img src={zara} alt="zara" />
+          </Especial>
+          <Especial>
+            <img src={zara} alt="zara" />
+          </Especial>
+          <Especial>
+            <img src={zara} alt="zara" />
+          </Especial>
+          <Especial>
+            <img src={zara} alt="zara" />
+          </Especial>
+          <Especial>
+            <img src={zara} alt="zara" />
+          </Especial>
+          <div>
+            <img src={zara} alt="zara" />
+          </div>
+        </ShotBox>
+      </Shots>
+
+      <Banner2></Banner2>
+
+      <BannerBox>
+        <Banner3></Banner3>
+        <Banner4></Banner4>
+      </BannerBox>
+
+      <FooterWeb/>
+
     </>
   );
 }
