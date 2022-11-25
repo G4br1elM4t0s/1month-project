@@ -35,7 +35,7 @@ const ContentBox = styled.div`
     flex-wrap: wrap;
     height: 100%;
     justify-content: space-around;
-    background:red;
+   
 `
 
 const Content = styled.div`
@@ -44,7 +44,7 @@ const Content = styled.div`
     flex-wrap: wrap;
     height: 100%;
     justify-content: space-around;
-    background:purple;
+
   
  
 `;
@@ -94,18 +94,40 @@ const FilterBarH = styled.div`
 
 const ContainerH = styled.div`
   display:flex;
-
+  align-items: center;
+  h4{
+    font-size:12px;
+  }
   div{
     width:24px;
     height:24px;
     background:#F1F1F1;
     text-align:center;
+    border-radius:4px;
 
     p{
       color:#626262;
 
     }
   }
+`
+
+const ContainerHTwo = styled.div`
+  display:flex;
+  align-items: center;
+  h4{
+    font-size:12px;
+  }
+  select{
+    width:106px;
+    height:24px;
+    border:none;
+    border-radius:4px;
+    font-size:12px;
+  }
+
+    
+  
 `
 
 import { FooterWeb } from "../../components/Footer.Web";
@@ -203,6 +225,18 @@ export function Category() {
                 <p>9</p>
               </div>
             </ContainerH>
+            <ContainerHTwo>
+              <h4>Sort By</h4>
+              <select name="" id="">
+                <option value="">Position</option>
+                <option value="">Position</option>
+                <option value="">Position</option>
+                <option value="">Position</option>
+                <option value="">Position</option>
+                <option value="">Position</option>
+
+              </select>
+            </ContainerHTwo>
           </FilterBarH>
           <ContentBox>
           <Card>
