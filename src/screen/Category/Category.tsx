@@ -17,6 +17,7 @@ const SectionContent = styled.section`
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-bottom:30px;
 `;
 
 const FilterBar = styled.div`
@@ -74,6 +75,8 @@ const Tags = styled.div`
   margin-bottom:15px;
 `
 
+
+import { FooterWeb } from "../../components/Footer.Web";
 import bolsa from "./image.png";
 import like from "../../components/img/coracao.png";
 import estrela from "./icon/Vector-1.png";
@@ -381,6 +384,8 @@ export function Category() {
           </Card>
         </Content>
       </SectionContent>
+
+      <FooterWeb/>
     </>
   );
 }
