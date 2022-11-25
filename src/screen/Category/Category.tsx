@@ -143,6 +143,45 @@ const ContainerHTwo = styled.div`
   
 `
 
+const ButtonBox = styled.div`
+  display:flex;
+  background:white;
+`
+
+const NextBox = styled.div`
+  display:flex;
+  background-color:#F1F1F1;
+  border-radius:4px;
+  
+
+`
+
+const ButtonS = styled.button`
+  background: #1B4B66;
+  width:42px;
+  height:28px;
+  border-radius:12px;
+  border: none;
+`
+
+const ButtonNT = styled.button`
+  width:42px;
+  height:28px;
+  background: #F1F1F1;
+  border-radius:12px;
+  border: none;
+  
+  `
+
+  const ButtonNext = styled.button`
+     background: #F1F1F1;
+      width:42px;
+      height:28px;
+      margin-left: 10px;
+      border-radius:12px;
+      border: none;
+  `
+
 import { FooterWeb } from "../../components/Footer.Web";
 import bolsa from "./image.png";
 
@@ -478,6 +517,19 @@ export function Category() {
             </Description>
           </Card>
           </ContentBox>
+
+          <ButtonBox>
+          <NextBox>
+            <ButtonS>1</ButtonS>
+            <ButtonNT>2</ButtonNT>
+            <ButtonNT>3</ButtonNT>
+            <ButtonNT>4</ButtonNT>
+            <ButtonNT>5</ButtonNT>
+
+            
+          </NextBox>
+          <ButtonNext>Next</ButtonNext>
+          </ButtonBox>
         </Content>
       </SectionContent>
 
