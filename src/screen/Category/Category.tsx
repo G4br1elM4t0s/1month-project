@@ -30,7 +30,6 @@ flex-direction: column;
 
 const Content = styled.div`
   width: 80%;
-  background: gray;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -66,6 +65,13 @@ const ChecksBox = styled.div`
 
 const CheckContent = styled.div`
   display:flex;
+  margin-bottom:10px;
+`
+
+const Tags = styled.div`
+  display:flex;
+  border-bottom: 1px solid gray;
+  margin-bottom:15px;
 `
 
 import bolsa from "./image.png";
@@ -82,16 +88,16 @@ export function Category() {
       <BannerPrincipal></BannerPrincipal>
       <SectionContent>
         <FilterBar>
-          <div>
+          <Tags>
             {" "}
             <p>Size</p>
             <img src={plus} alt="plus" />
-          </div>
-          <div>
+          </Tags>
+          <Tags>
             {" "}
             <p>Color</p>
             <img src={minus} alt="plus" />
-          </div>
+          </Tags>
           <ChecksBox>
           <CheckContent>
               <input type="checkbox" />
@@ -125,6 +131,26 @@ export function Category() {
               <input type="checkbox" />
               <p>Blue</p>
             </CheckContent>
+            <Tags>
+            {" "}
+            <p>Size</p>
+            <img src={plus} alt="plus" />
+          </Tags>
+          <Tags>
+            {" "}
+            <p>Size</p>
+            <img src={plus} alt="plus" />
+          </Tags>
+          <Tags>
+            {" "}
+            <p>Size</p>
+            <img src={plus} alt="plus" />
+          </Tags>
+          <Tags>
+            {" "}
+            <p>Size</p>
+            <img src={plus} alt="plus" />
+          </Tags>
           </ChecksBox>
         </FilterBar>
         <Content>
