@@ -87,27 +87,40 @@ const Tags = styled.div`
 
 const FilterBarH = styled.div`
   display: flex;
+  align-items: center;
+  
   width:100%;
   margin-left:40px;
+  margin-bottom:42px;
+  
+  h3{
+    margin-left:13px;
+    margin-right:158px;
+    font-size:14px;
+  }
 
 `;
 
 const ContainerH = styled.div`
   display:flex;
   align-items: center;
+  margin-right:74px;
   h4{
-    font-size:12px;
+    font-size:14px;
   }
   div{
-    width:24px;
-    height:24px;
+    width:36px;
+    height:36px;
     background:#F1F1F1;
     text-align:center;
     border-radius:4px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
     p{
       color:#626262;
-
+      font-size:14px;
     }
   }
 `
@@ -116,11 +129,11 @@ const ContainerHTwo = styled.div`
   display:flex;
   align-items: center;
   h4{
-    font-size:12px;
+    font-size:14px;
   }
   select{
     width:106px;
-    height:24px;
+    height:36px;
     border:none;
     border-radius:4px;
     font-size:12px;
