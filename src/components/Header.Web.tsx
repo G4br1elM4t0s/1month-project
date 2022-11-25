@@ -10,6 +10,11 @@ const Itens = styled.a`
   color: #171520;
   margin-right: 20px;
   cursor: pointer;
+
+  a{
+    text-decoration:none;
+    color:black;
+  }
 `;
 
 const Header = styled.header`
@@ -104,9 +109,9 @@ export function HeaderWeb() {
   return (
     <Body>
     <Header>
-      <Logo src={logo} alt="logo" />
+      <a href="http://localhost:5173/"><Logo src={logo} alt="logo" /></a>
       <Container>
-        <a href="http://localhost:5173/HomeCategory"><Itens>Handbags</Itens></a>
+        <Itens><a href="http://localhost:5173/HomeCategory">Handbags</a></Itens>
         <Itens>Watches</Itens>
         <Itens>Skincare</Itens>
         <Itens>Jewellery</Itens>
