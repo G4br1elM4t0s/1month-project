@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import React from 'react'
-import { HomeWeb } from './screen/HomeWeb'
+import { HomeWeb } from './screen/HomeWeb/HomeWeb'
+import { Category } from './screen/Category/Category'
 
 
 function App() {
 
 
   return (
-   <HomeWeb/>
+     <Category/>
+     //<HomeWeb/>
   )
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { HeaderWeb } from "../components/Header.Web";
-import GlobalStyle from "../components/styles";
+import { HeaderWeb } from "../../components/Header.Web";
+import GlobalStyle from "../../components/styles";
 
 const Experienci = styled.div`
   width: 100%;
@@ -109,8 +109,12 @@ const CollectionsCardBox = styled.div`
   justify-content: center;
 `;
 
-const ColectionsCard = styled.div`
-  background-image: url(${perfume});
+interface Props{
+  name:string;
+}
+
+const ColectionsCard = styled.div<Props>`
+  background-image: url(${(props)=> props.name});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -208,11 +212,11 @@ const Banner4 = styled.div`
 `
 
 import card from "./card.png";
-import like from "../components/img/coracao.png";
-import seta from "../components/img/chevron-right-small.png";
+import like from "../../components/img/coracao.png";
+import seta from "../../components/img/chevron-right-small.png";
 import perfume from "./perfume.png";
 import zara from "./logos/zara_logo.png";
-import { FooterWeb } from "../components/Footer.Web";
+import { FooterWeb } from "../../components/Footer.Web";
 
 export function HomeWeb() {
   return (
@@ -295,22 +299,22 @@ export function HomeWeb() {
           <h2>Handpicked Collections</h2>
         </div>
         <CollectionsCardBox>
-          <ColectionsCard>
+          <ColectionsCard name={perfume}>
             <div>
               <h3>Personal Care</h3>
             </div>
           </ColectionsCard>
-          <ColectionsCard>
+          <ColectionsCard name={perfume}>
             <div>
               <h3>Personal Care</h3>
             </div>
           </ColectionsCard>
-          <ColectionsCard>
+          <ColectionsCard name={perfume}>
             <div>
               <h3>Personal Care</h3>
             </div>
           </ColectionsCard>
-          <ColectionsCard>
+          <ColectionsCard  name={perfume}>
             <h3>Personal Care</h3>
           </ColectionsCard>
         </CollectionsCardBox>
