@@ -99,7 +99,7 @@ const Body = styled.body`
     box-sizen:border-box;
 `
 
-import lupa from "./img/lupa.svg";
+import lupa from "./img/lupa.svg"
 import bolsa from "./img/icon/bag.svg";
 import perfil from "./img/icon/profile.svg";
 import curtida from "./img/icon/wishlist.svg";
