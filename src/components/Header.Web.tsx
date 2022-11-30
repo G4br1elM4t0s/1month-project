@@ -4,19 +4,16 @@ import styled from "styled-components";
 export interface HeaderProps {}
 
 
-
 const Itens = styled.a`
   font-size: 14px;
   color: #171520;
   margin-right: 20px;
   cursor: pointer;
-
   a{
     text-decoration:none;
     color:black;
   }
 `;
-
 const Header = styled.header`
   display: flex;
   width: 100%;
@@ -24,6 +21,8 @@ const Header = styled.header`
   align-items: center;
   font-family:'Inter', sans-serif;
   justify-content: space-around;
+  background: white;
+  
 `;
 
 const Container = styled.div`
@@ -54,7 +53,6 @@ const Input = styled.input`
   font-size: 14px;
   border: none;
   outline: none;
-
   background: "transparent";
 `;
 
@@ -76,7 +74,6 @@ const Bag = styled.img`
   width: 24px;
   height: 24px;
   cursor:pointer;
-
 `
 
 const Perfil = styled.img`
@@ -99,19 +96,19 @@ const Body = styled.body`
     box-sizen:border-box;
 `
 
-import lupa from "./img/lupa.svg"
+import lupa from "./img/lupa.svg";
 import bolsa from "./img/icon/bag.svg";
 import perfil from "./img/icon/profile.svg";
 import curtida from "./img/icon/wishlist.svg";
-import logo from "./img/logo.svg";
+import logo from "./img/logo.png";
 
 export function HeaderWeb() {
   return (
     <Body>
     <Header>
-      <a href="http://localhost:5173/"><Logo src={logo} alt="logo" /></a>
+      <a href="/"><Logo src={logo} alt="logo" /></a>
       <Container>
-        <Itens><a href="http://localhost:5173/HomeCategory">Handbags</a></Itens>
+        <Itens><a href="/HomeCategory">Handbags</a></Itens>
         <Itens>Watches</Itens>
         <Itens>Skincare</Itens>
         <Itens>Jewellery</Itens>

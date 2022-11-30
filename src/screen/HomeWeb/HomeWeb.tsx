@@ -14,22 +14,41 @@ const Experienci = styled.div`
 `;
 
 const Banner = styled.div`
+  
   width: 98%;
   height: 400px;
-  background: red;
+  background-image: url(${banner});
   margin: 0 auto;
   margin-top: 24px;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
+  border-radius: 16px;
   div {
-    width: 650px;
+    
+    width: 759px;
     height: 316px;
-    background: gray;
+    background:#E5E5E5;
+    opacity: 70%;
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
+    
+  }
+
+  h2 {
+    font-size:60px;
+    font-weight: 800;
+    color: #1B4B66;   
+    padding-top: 60px;
+    margin-left: 30px;
+  }
+
+  p {
+    font-size: 28px;
+    color: ##1B4B66;
+    font-weight:500;
+    padding-top: 10px;
+    margin-left: 30px;
   }
 `;
 
@@ -41,17 +60,25 @@ const Carrosel = styled.div`
     font-size: 34px;
     line-height: 44px;
     font-family: "Inter";
+    margin-top: 50px;
   }
+  width:98%;
+  margin: 0 auto;
+
+ 
+  
+ 
 `;
 
 const CardBox = styled.div`
-  display: flex;
+  display: flex; 
+  justify-content: space-around;
 `;
 
 const Card = styled.div`
   width: 286px;
-  margin-right: 40px;
-
+  
+  
   img {
     width: 284px;
     height: 350px;
@@ -71,11 +98,14 @@ const Descript = styled.div`
     width: 18px;
     height: 18px;
     margin-left: 60%;
+    margin-top: 10px;
   }
   h4 {
     font-size: 16px;
     font-weight: 500;
     font-family: "Inter";
+    padding-top: 10px;
+    padding-bottom:20px;
   }
   p {
     font-size: 14px;
@@ -90,7 +120,6 @@ const Collections = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   div {
     width: 100%;
     display: flex;
@@ -109,9 +138,7 @@ const CollectionsCardBox = styled.div`
   justify-content: center;
 `;
 
-interface Props{
-  name:string;
-}
+interface Props {name: string}
 
 const ColectionsCard = styled.div<Props>`
   background-image: url(${(props)=> props.name});
@@ -137,7 +164,6 @@ const ColectionsCard = styled.div<Props>`
 const Shots = styled.div`
   margin-top: 60px;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,8 +172,8 @@ const Shots = styled.div`
     display: flex;
     align-items: flex-start;
     h2 {
-
-      margin: 0 0 24px 65px;
+      margin: 0 0 44px 35px;
+      font-size: 34px;
     }
   }
 `;
@@ -155,8 +181,7 @@ const Shots = styled.div`
 const ShotBox = styled.div`
   display: flex;
   width: 96%;
-  justify-content: center;
-
+  justify-content: space-around;
   div {
     width: 168px;
     height: 168px;
@@ -185,6 +210,31 @@ const Banner2 = styled.div`
   margin: 0 auto;
   margin-bottom:40px;
   margin-top:68px;
+  border-radius: 16px;
+  background-image: url(${banner2});
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    font-size: 30px;
+    color: #97451F;
+    
+  }
+  h3 {
+    font-size: 52px;
+    color: #97451F;
+    padding-top: 20px;
+    font-weight: 700;
+  }
+
+  p, h3 {
+    margin-left: 50px; 
+
+  }
+
+  
+ 
 `
 
 const BannerBox = styled.div`
@@ -198,26 +248,79 @@ const BannerBox = styled.div`
 
 const Banner3 = styled.div`
   height: 228px;
-  width: 604px;
+  width: 49%;
   background: gray;
   border-radius: 16px;
+  background-image: url(${retangulo});
+  background-size: cover;
+  display: flex;
+  text-align: right;
+  
+  img{
+    border-radius: 16px;
+  }
+
+  h3 {
+    color: #A53F64;
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute; 
+    margin-top: 26px;
+    left: 580px;
+  }
 `
 
 const Banner4 = styled.div`
-    height: 228px;
-  width: 604px;
+  height: 228px;
+  width: 49%;
   background: gray;
   border-radius: 16px;
-
+  background-image: url(${banner4});
+  background-size: cover;
+  display: flex;
+  text-align: right;
+  
+  img{
+    border-radius: 16px;
+  }
+  h3 {
+    position: absolute;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #1B4B66;
+    right: 40px;
+    margin-top: 26px;
+  }
 `
+
 
 import card from "./card.png";
 import like from "../../components/img/coracao.png";
-import seta from "../../components/img/chevron-right-small.png";
-import perfume from "./perfume.png";
-import zara from "./logos/zara_logo.png";
+import seta from "../../components/img/chevron-right-small.png"
+import perfume from "../img/perfume.png";
+import bolsa1 from "../img/bolsa1.png";
+import bolsa2 from "../img/bolsa2.png";
+import bolsa3 from "../img/bolsa3.png";
+import bolsa4 from "../img/bolsa4.png";
 import { FooterWeb } from "../../components/Footer.Web";
+import hem from "./logos/H&M-Logo1.png";
+import zara from "./logos/zara.png";
+import dolceGabana from "./logos/Dolce_&_Gabban1.png";
+import prada from "./logos/Prada-Logo1.png";
+import biba from "./logos/bibaLogo.png";
+import chanel from "./logos/Chanel_logo_interlocking_cs1.png";
+import banner2 from "../img/card2.png";
+import banner3 from "../img/card2.1.png";
+import banner4 from "../img/card2.2.png";
+import banner from ".././img/banner.png";
+import sunGlasses from "../img/oculos.png";
+import relogio from "../img/relogio.png";
+import retangulo from "../img/Rectangle48.png";
+import setaRosa from "../img/setaRosa.png";
+import setaAzul from "../img/setaAzul.png";
 
+ 
 export function HomeWeb() {
   return (
     <>
@@ -230,7 +333,10 @@ export function HomeWeb() {
       </Experienci>
 
       <Banner>
-        <div></div>
+        <div>
+          <h2>Carry your Funk</h2>
+          <p>Trendy handbags collection for yout <br></br> party animal</p>
+        </div>
       </Banner>
 
       <Carrosel>
@@ -244,7 +350,7 @@ export function HomeWeb() {
 
         <CardBox>
           <Card>
-            <img src={card} alt="" />
+            <img src={bolsa1} alt="" />
             <Descript>
               <div>
                 <h4>Grande</h4>
@@ -256,36 +362,36 @@ export function HomeWeb() {
             </Descript>
           </Card>
           <Card>
-            <img src={card} alt="" />
+            <img src={bolsa2} alt="" />
             <Descript>
               <div>
-                <h4>Grande</h4>
-                <p>Blossom Pouch</p>
-                <h4>$39.49</h4>
+                <h4>Coach</h4>
+                <p>Leather Coach </p>
+                <h4>$54.69</h4>
               </div>
 
               <img src={like} alt="curtida" />
             </Descript>
           </Card>
           <Card>
-            <img src={card} alt="" />
+            <img src={bolsa3} alt="" />
             <Descript>
               <div>
-                <h4>Grande</h4>
-                <p>Blossom Pouch</p>
-                <h4>$39.49</h4>
+                <h4>Remus</h4>
+                <p>Brown Strap </p>
+                <h4>$57.49</h4>
               </div>
 
               <img src={like} alt="curtida" />
             </Descript>
           </Card>
           <Card>
-            <img src={card} alt="" />
+            <img src={bolsa4} alt="" />
             <Descript>
               <div>
-                <h4>Grande</h4>
-                <p>Blossom Pouch</p>
-                <h4>$39.49</h4>
+                <h4>Boujee</h4>
+                <p>Black Bag</p>
+                <h4>$56.49</h4>
               </div>
 
               <img src={like} alt="curtida" />
@@ -299,23 +405,23 @@ export function HomeWeb() {
           <h2>Handpicked Collections</h2>
         </div>
         <CollectionsCardBox>
-          <ColectionsCard name={perfume}>
+          <ColectionsCard name = {perfume}>
             <div>
               <h3>Personal Care</h3>
             </div>
           </ColectionsCard>
-          <ColectionsCard name={perfume}>
+          <ColectionsCard name = {bolsa1}>
             <div>
-              <h3>Personal Care</h3>
+              <h3>Handbags</h3>
             </div>
           </ColectionsCard>
-          <ColectionsCard name={perfume}>
+          <ColectionsCard name = {relogio}>
             <div>
-              <h3>Personal Care</h3>
+              <h3>Wrist Watches</h3>
             </div>
           </ColectionsCard>
-          <ColectionsCard  name={perfume}>
-            <h3>Personal Care</h3>
+          <ColectionsCard name = {sunGlasses}>
+            <h3>Sun Glasses</h3>
           </ColectionsCard>
         </CollectionsCardBox>
       </Collections>
@@ -329,28 +435,37 @@ export function HomeWeb() {
             <img src={zara} alt="zara" />
           </Especial>
           <Especial>
-            <img src={zara} alt="zara" />
+            <img src={biba} alt="zara" />
           </Especial>
           <Especial>
-            <img src={zara} alt="zara" />
+            <img src={chanel} alt="zara" />
           </Especial>
           <Especial>
-            <img src={zara} alt="zara" />
+            <img src={prada} alt="zara" />
           </Especial>
           <Especial>
-            <img src={zara} alt="zara" />
+            <img src={dolceGabana} alt="zara" />
           </Especial>
           <div>
-            <img src={zara} alt="zara" />
+            <img src={hem} alt="zara" />
           </div>
         </ShotBox>
       </Shots>
 
-      <Banner2></Banner2>
+      <Banner2>
+       <p>LIFESTYLE</p>
+       <h3>Makeup Accessories<br></br> from Top Brands</h3>
+      </Banner2>
 
       <BannerBox>
-        <Banner3></Banner3>
-        <Banner4></Banner4>
+        <Banner3>
+        <h3>Skincare<br></br>Essentials</h3> 
+          <img src={banner3} alt="banner2" />
+        </Banner3>
+        <Banner4>
+          <img src={banner4} alt="banner2" />
+          <h3>Facepacks<br></br>& Pells</h3> 
+        </Banner4>
       </BannerBox>
 
       <FooterWeb/>

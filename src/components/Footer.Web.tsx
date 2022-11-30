@@ -19,7 +19,6 @@ const Footer = styled.footer`
   display:flex;
   justify-content: space-between;
   
-
   padding: 0 62px 0 62px;
 `;
 
@@ -84,7 +83,6 @@ const LocalBox = styled.div`
     width:15px;
     height:19px;
     margin-right:8px;
-
   }
   h3{
     font-weight: 500;
@@ -93,7 +91,6 @@ const LocalBox = styled.div`
     font-family: "Inter", sans-serif;
     margin:0;
    
-
   }
 `
 
@@ -120,12 +117,12 @@ const Box = styled.div`
 
 // © 2021 | Cora Leviene All Rights Reserved
 
-import location from './img/location.svg';
+import location from './img/location.png';
 
-import facebook from './img/rdsocial/fblogo.svg'
-import instagram from './img/rdsocial/instagram.svg'
-import twitter from './img/rdsocial/twitter.svg'
-import youtube from './img/rdsocial/youtube.svg'
+import facebook from './img/fblogo.png'
+import instagram from './img/instagram.png'
+import twitter from './img/twitter.png'
+import youtube from './img/youtube.png'
 
 
 
