@@ -30,11 +30,11 @@ export function Product() {
         <img src={bolsa} alt="bolsa" />
       </ContentItem>
 
-      <ContentItemBox>
-      <ContentItemPreview urlName={bolsa} ></ContentItemPreview>
-      <ContentItemPreview urlName={bolsa} ></ContentItemPreview>
-      <ContentItemPreview urlName={bolsa} ></ContentItemPreview>
-      <ContentItemPreview urlName={bolsa} ></ContentItemPreview>
+      <ContentItemBox> 
+        <ContentItemPreview urlName={bolsa} ></ContentItemPreview>
+        <ContentItemPreview urlName={bolsa} ></ContentItemPreview>
+        <ContentItemPreview urlName={bolsa} ></ContentItemPreview>
+        <ContentItemPreview urlName={bolsa} ></ContentItemPreview>
       </ContentItemBox>
       <FooterWeb />
     </>

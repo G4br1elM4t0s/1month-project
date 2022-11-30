@@ -84,7 +84,7 @@ const Tags = styled.div`
 import { FooterWeb } from "../../components/Footer.Web";
 import { CardWrapper } from "../../components/Card";
 
-
+import bolsa2 from './bolsa2.png'
 import bolsa from "./bolsa1.png";
 import like from "../../components/img/coracao.png";
 import estrela from "./icon/Vector-1.png";
@@ -95,10 +95,10 @@ import { Link, useHref } from "react-router-dom";
 export function Category() {
   const contentCard = [
     {
-    img:bolsa,
-    nome:"Grande",
-    tipo:"Blossom Pouch",
-    price: "$39.49",
+    img:bolsa2,
+    nome:"Remus",
+    tipo:"Brown Strap Bag",
+    price: "$57.00",
     oPrice: "$78.66"
 
   },
