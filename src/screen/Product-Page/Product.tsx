@@ -6,7 +6,6 @@ import { ContentItemPreview, ContentItem, Navigate, ContentItemBox } from "./sty
 
 //icons e images
 import maiorQ from '../../components/img/chevron-right-small.png'
-
 import bolsa from './product-image.png';
 
 
