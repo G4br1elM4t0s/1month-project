@@ -15,7 +15,8 @@
     "react-alice-carousel": "^2.6.7",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",

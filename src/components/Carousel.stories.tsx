@@ -1,4 +1,4 @@
-import {CarouselWrapper,CarouselProps} from './carousel/Carousel';
+import {CarouselWrapper,CarouselProps} from './Carousel';
 import {Meta,StoryObj} from '@storybook/react'
 
 export default{
@@ -15,3 +15,4 @@ export default{
 export const Carousel: StoryObj<CarouselProps> = {
   args:{ }
 }
+
