@@ -45,7 +45,7 @@ const Price = styled.div`
 import bolsa from "./bolsa1.png";
 import like from "./img/coracao.png";
 import estrela from "./icon/Vector-1.png";
-import estrela2 from "./icon/Vector-1.png";
+import estrela2 from "./icon/Vector-2.png";
 
 export interface CardProps {
   imgBolsa: string ;

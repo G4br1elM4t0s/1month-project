@@ -45,7 +45,7 @@ export const CarouselWrapper:React.FC= (props) => {
 export const ItemBox:React.FC<ItemBoxProps> = (props) => {
   return (
     <>
-      <Teste
+      <SliderPreview
         loop={true}
         spaceBetween={10}
         modules={[Navigation,Thumbs]}
@@ -58,10 +58,10 @@ export const ItemBox:React.FC<ItemBoxProps> = (props) => {
             </SwiperSlide>
           ))
         }
-      </Teste>
-      <Teste2
+      </SliderPreview>
+      <SliderBox
         loop={true}
-        spaceBetween={-25}
+        spaceBetween={-25} //sever para juntar ou afasta os itens
         slidesPerView={4}
         navigation={true}
         modules={[Navigation,Thumbs]}
@@ -77,7 +77,7 @@ export const ItemBox:React.FC<ItemBoxProps> = (props) => {
             </SwiperSlide>
           ))
         }
-      </Teste2>
+      </SliderBox>
     </>
   );
 }
@@ -87,7 +87,7 @@ const ItemImageSlider = styled(ItemBox)<ItemBoxProps>`
 `
 
 
-const Teste = styled(Swiper)`
+const SliderPreview = styled(Swiper)`
   width:38rem;
   height:38rem;
   border-radius: 16px;
@@ -112,7 +112,7 @@ const Teste = styled(Swiper)`
 `
 
 
-const Teste2 = styled(Swiper)`
+const SliderBox = styled(Swiper)`
   width:29rem;
   margin-top:30px;
   
