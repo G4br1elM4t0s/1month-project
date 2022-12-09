@@ -61,7 +61,7 @@ export const ItemBox:React.FC<ItemBoxProps> = (props) => {
       </Teste>
       <Teste2
         loop={true}
-        spaceBetween={10}
+        spaceBetween={-25}
         slidesPerView={4}
         navigation={true}
         modules={[Navigation,Thumbs]}
@@ -113,10 +113,15 @@ const Teste = styled(Swiper)`
 
 
 const Teste2 = styled(Swiper)`
-  width:30rem;
+  width:29rem;
   margin-top:30px;
   
+  --swiper-navigation-color: #000;
+  --swiper-navigation-size: 15px;
+  
 .swiper-slide {
+        
+        margin-left:2px;
         width:5rem;
         height:5rem;
         cursor: pointer;
@@ -129,30 +134,33 @@ const Teste2 = styled(Swiper)`
 
     .Item-images-slider{
         width: 5rem;
+
+  
         padding-top: 70%;
-        overflow: hidden;
+        
         position: relative;
         border-radius: 8px;
 
         img {
             position: absolute;
             top: 0;
-            left: 0;
+            left: 14px;
+            
             width: 100%;
             border-radius: 8px;
+            margin-right:15px;
         }
     }
     .swiper-button-prev {
-    
-        height:5px;
-        width: 5px;
+        left:2px;
+        
+      
         color: rgb(0, 0, 0);
     }
 
     .swiper-button-next {
-     
-        height:5px;
-        width: 5px;
+        right: 2px;
+       
         color: rgb(0, 0, 0);
     }
 `
