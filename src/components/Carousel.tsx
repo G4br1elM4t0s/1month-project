@@ -34,6 +34,8 @@ export interface CarouselProps {
 
 import coach from "./Coach.png";
 import { Navigation, Thumbs } from "swiper";
+
+
 export const CarouselWrapper:React.FC= (props) => {
   return (
     <>
