@@ -29,6 +29,7 @@ import estrela2 from "../Category/icon/Vector-2.png";
 
 import plus from '../../components/img/plus.png';
 import menus from '../../components/img/small-minus.png'
+import { CouponWrapper } from "../../components/Coupon";
 
 export function Product() {
   const [counter, setCounter] = useState(0);
@@ -100,6 +101,7 @@ export function Product() {
               
             </div>
           </Amount>
+          <CouponWrapper></CouponWrapper>
         </RightContent>
       </OuContent>
       <FooterWeb />

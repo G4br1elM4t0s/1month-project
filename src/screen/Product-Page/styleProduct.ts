@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 
@@ -53,13 +54,14 @@ export const RightContent = styled.div`
 `
 
 export const PrimaryBoxRightContent = styled.div`
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   width: 100%;
 `
 
 export const BoxStart = styled.div`
 display: flex;
 align-items:center;
+margin-bottom:27px;
  p{
   margin-left:16px;
   color:#B6B6B6;
@@ -69,7 +71,7 @@ align-items:center;
 
 
 export const TitleAndDescription = styled.div`
-  
+  margin-bottom:32px;
 `
 export const PriceBox = styled.div`
   display: flex;
@@ -93,6 +95,7 @@ export const Discount = styled.div`
   height: 52px;
   background:#F1F1F1;
   border-radius:5px;
+  margin-left:50px;
   input{
     background: transparent;
     color:#626262;
@@ -118,6 +121,7 @@ export const Amount = styled.div`
   display:flex;
   margin-top:42px;
   align-items:center;
+  margin-bottom:52px;
     h3{
       font-size:20px;
     }

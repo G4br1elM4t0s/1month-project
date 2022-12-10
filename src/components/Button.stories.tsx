@@ -15,7 +15,7 @@ export default{
 export const ButtonLg: StoryObj<ButtonProps> = {
   args:{
     size: "large",
-    status:"default",
+    status:"focused",
     typee:"primary"
   }
 }
